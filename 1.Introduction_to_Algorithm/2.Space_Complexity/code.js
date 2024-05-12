@@ -25,3 +25,9 @@ if (word1.length != word2.length) {
     console.log("Is Not anagram");
   }
 }
+
+/*
+In this code, we format both strings as an array, sort them, then check if
+they are the same. This will verify that they contain the same letters, 
+telling us if they are anagrams.
+*/
