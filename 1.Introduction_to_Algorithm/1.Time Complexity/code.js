@@ -17,7 +17,7 @@ var total = 0;
 for (var i = 0; i < nums.length; i++) {
   total += nums[i];
 }
-
+    
 console.log("Missing no. is ", 5050 - total);
 
 //The first part of the code generates the numbers from 1 to 100, with 50 excluded. The second loop sums the values and finds the missing number.
