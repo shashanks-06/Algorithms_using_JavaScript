@@ -15,3 +15,8 @@ function reverse(str, len) {
 
 var s = "test string";
 reverse(s, 0);
+
+/*
+On each iteration, we print the next letter, using the call stack of recursion to simulate 
+an actual stack. This allows us to reverse the string without our own stack implementation.
+*/
