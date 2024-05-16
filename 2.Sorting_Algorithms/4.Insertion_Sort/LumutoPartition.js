@@ -37,3 +37,11 @@ function quicksort(arr, start, end) {
   quicksort(arr, start, pivot - 1);
   quicksort(arr, pivot + 1, end);
 }
+
+/* This gives us a quicksort with the Lomuto partition scheme. To test this code, we can 
+create an array and sort it, as shown below. */
+
+var arr = [9, -3, 5, 2, 6, 8, -6, 1, 3];
+quicksort(arr, 0, arr.length - 1);
+
+console.log(arr);
