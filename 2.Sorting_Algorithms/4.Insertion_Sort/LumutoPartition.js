@@ -27,4 +27,13 @@ function partition(arr, start, end) {
   return pIndex;
 }
 
+/* Once this code is in place, you can use it in the quicksort algorithm as usual. */
 
+function quicksort(arr, start, end) {
+  if (start >= end) {
+    return;
+  }
+  var pivot = partition(arr, start, end);
+  quicksort(arr, start, pivot - 1);
+  quicksort(arr, pivot + 1, end);
+}
