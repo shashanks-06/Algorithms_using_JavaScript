@@ -23,4 +23,4 @@ function mergeSort(arr) {
   }
 }
 
-console.log(mergeSort([2, 6, 4, 8, 5, 9, 1]));
+console.log(mergeSort([2, 6, 4, 8, 5, 9, 1])); // nlog(n)
