@@ -12,6 +12,7 @@ function quickSort(arr) {
   }
 
   return quickSort(left).concat(pivot, quickSort(right));
+  //     value < pivot  | pivot value | value > pivot
 }
 
 console.log(quickSort([1, 4, 2, 7, 5, 8]));
