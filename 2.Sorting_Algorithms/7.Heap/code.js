@@ -1,3 +1,5 @@
+// Implementation of Heap
+
 class MaxHeap {
   constructor() {
     this.heap = [];
@@ -23,8 +25,8 @@ class MaxHeap {
 
   insert(item) {
     this.heap.push(item);
-    index = this.heap.length - 1;
-    parent = this.heap.parentIndex(index);
+    var index = this.heap.length - 1;
+    var parent = this.parentIndex(index);
 
     while (this.heap[parent] && this.heap[parent] < this.heap[index]) {
       this.swap(parent, index);
@@ -39,7 +41,7 @@ class MaxHeap {
 
     var index = 0;
     var leftChild = this.leftChildIndex(index);
-    var rightChild = this.rightChildIndex(indexs);
+    var rightChild = this.rightChildIndex(index);
 
     while (
       (this.heap[leftChild] && this.heap[leftChild] > this.heap[index]) ||
@@ -59,3 +61,23 @@ class MaxHeap {
     return this.item;
   }
 }
+
+// Sorting by Heap
+function heapSort(arr) {
+  var sorted = [];
+  var heap1 = new MaxHeap();
+
+  for (var i = 0; i < arr.length; i++) {
+    heap1.insert(arr[i]);
+  }
+
+  for (var i = 0; i < arr.length; i++) {
+    sorted.push(heap1.delete());
+  }
+
+  return sorted;
+}
+
+var arr = [1, 5, 3, 4, 7, 2, 9];
+
+console.log(heapSort(arr));
