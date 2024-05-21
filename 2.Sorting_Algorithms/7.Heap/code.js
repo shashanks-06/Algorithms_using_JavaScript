@@ -72,7 +72,7 @@ function heapSort(arr) {
   }
 
   for (var i = 0; i < arr.length; i++) {
-    sorted.push(heap1.delete());
+    sorted.push(heap1.delete()); 
   }
 
   return sorted;
