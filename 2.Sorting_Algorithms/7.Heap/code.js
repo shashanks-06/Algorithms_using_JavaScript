@@ -72,7 +72,7 @@ function heapSort(arr) {
   }
 
   for (var i = 0; i < arr.length; i++) {
-    sorted.push(heap1.delete()); 
+    sorted.push(heap1.delete());
   }
 
   return sorted;
@@ -80,4 +80,4 @@ function heapSort(arr) {
 
 var arr = [1, 5, 3, 4, 7, 2, 9];
 
-console.log(heapSort(arr));
+console.log(heapSort(arr)); //[ 9, 7, 5, 4, 3, 2, 1]
