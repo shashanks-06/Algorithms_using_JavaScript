@@ -15,5 +15,11 @@ class MaxHeap {
     return 2 * index + 2;
   }
 
-  
+  swap(a, b) {
+    let tmp = this.heap[a];
+    this.heap[a] = this.heap[b];
+    this.heap[b] = tmp;
+  }
+
+ 
 }
